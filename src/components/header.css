@@ -1,0 +1,14 @@
+header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.category-filter-txt {
+  display: inline-block;
+  border-left: solid 1px #000;
+  padding: 0 0.5em;
+}
+.header-category-filter-container a:first-child h3 {
+  border-left: none;
+  padding-left: 0;
+}
