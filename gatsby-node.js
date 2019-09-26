@@ -10,7 +10,7 @@ const path = require(`path`);
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const result = await graphql(`
+  const postContextQueryResult = await graphql(`
     {
       allMarkdownRemark {
         edges {
@@ -23,14 +23,26 @@ exports.createPages = async ({ actions, graphql }) => {
       }
     }
   `);
-  if (result.errors) {
-    console.error(result.errors);
+  if (postContextQueryResult.errors) {
+    console.error(postContextQueryResult.errors);
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  const categories = ['gaming', 'programming', 'others'];
+
+  postContextQueryResult.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: path.resolve(`src/templates/post.js`),
+    });
+  });
+
+  categories.forEach(category => {
+    createPage({
+      path: `/category/${category}`,
+      component: path.resolve(`src/templates/postList.js`),
+      context: {
+        category: category,
+      },
     });
   });
 };

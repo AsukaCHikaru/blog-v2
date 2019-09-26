@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../../components/layout';
-import SEO from '../../components/seo';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const renderPost = data => {
   return data.map(post => {
@@ -10,21 +10,21 @@ const renderPost = data => {
   });
 };
 
-const Gaming = ({ data }) => {
+export default function PostList({ data }) {
   const posts = data.allMarkdownRemark.edges;
   return (
     <Layout>
       <SEO title="gaming" />
-      {renderPost(posts)}
+      <div className="post-list-container">{renderPost(posts)}</div>
     </Layout>
   );
-};
+}
 
-export const posts = graphql`
-  query MyQueryInGame {
+export const pageQuery = graphql`
+  query($category: String!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { category: { eq: "gaming" } } }
+      filter: { frontmatter: { category: { eq: $category } } }
     ) {
       edges {
         node {
@@ -40,5 +40,3 @@ export const posts = graphql`
     }
   }
 `;
-
-export default Gaming;

@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
 };
 
 export const posts = graphql`
-  query MyQuery {
+  query queryPostsAll {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
