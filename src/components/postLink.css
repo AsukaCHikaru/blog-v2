@@ -1,0 +1,19 @@
+.post-link-container a {
+  text-decoration: none;
+}
+.post-link-title-txt {
+  color: #000;
+}
+.post-link-date-txt,
+.post-link-tag-txt {
+  display: inline-block;
+  color: #555;
+  font-size: 1em;
+  font-weight: 400;
+}
+.post-link-tag-txt {
+  font-weight: 100;
+}
+.post-link-tag-container {
+  display: inline-block;
+}

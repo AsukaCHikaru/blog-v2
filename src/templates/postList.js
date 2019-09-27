@@ -1,12 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import PostLink from '../components/postLink';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const renderPost = data => {
-  return data.map(post => {
-    return <p>{post.node.frontmatter.title}</p>;
+  return data.map((post, i) => {
+    return <PostLink post={post.node.frontmatter} key={`post-link-${i}`} />;
   });
 };
 
@@ -30,7 +31,7 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             title
-            date
+            date(formatString: "YYYY-MM-DD")
             path
             tags
             category

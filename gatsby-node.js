@@ -27,7 +27,7 @@ exports.createPages = async ({ actions, graphql }) => {
     console.error(postContextQueryResult.errors);
   }
 
-  const categories = ['gaming', 'programming', 'others'];
+  const categories = ['all', 'gaming', 'programming', 'others'];
 
   postContextQueryResult.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({

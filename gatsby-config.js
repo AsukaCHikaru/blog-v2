@@ -35,6 +35,12 @@ module.exports = {
         path: `${__dirname}/src/contents`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [{ family: `Noto Sans JP`, variants: [`100`, `400`, `700`] }],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
