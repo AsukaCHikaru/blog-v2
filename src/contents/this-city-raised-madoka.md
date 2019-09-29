@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2016-11-20
 title: 'この町が、まどかを育ててた'
-path: /this-city-raised-madoka
+path: /post/this-city-raised-madoka
 tags: 長崎, 森保まどか
 category: others
 ---

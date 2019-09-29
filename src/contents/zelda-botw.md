@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2018-12-16
 title: 'Zelda: Breath of the Wild'
-path: /zelda-botw
+path: /post/zelda-botw
 tags: Switch, Review
 category: gaming
 ---

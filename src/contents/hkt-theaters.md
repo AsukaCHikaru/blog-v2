@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2018-09-30
 title: '淺談劇場'
-path: /hkt-theaters
+path: /post/hkt-theaters
 tags: HKT48
 category: others
 ---

@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2019-03-04
 title: 'Devotion'
-path: /devotion
+path: /post/devotion
 tags: Indie, Review
 category: gaming
 ---

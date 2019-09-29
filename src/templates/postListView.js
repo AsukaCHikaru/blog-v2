@@ -1,28 +1,28 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import PostLink from '../components/postLink';
+import PostList from '../components/postList';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const renderPost = data => {
-  return data.map((post, i) => {
-    return <PostLink post={post.node.frontmatter} key={`post-link-${i}`} />;
-  });
-};
-
-const IndexPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges;
+export default function PostListView({ data, pageContext }) {
+  const categoryOrTag = pageContext.category || pageContext.tag;
+  const postData = data.allMarkdownRemark.edges.filter(
+    node =>
+      node.node.frontmatter.category === categoryOrTag ||
+      (node.node.frontmatter.tags !== null &&
+        node.node.frontmatter.tags.split(', ').includes(categoryOrTag))
+  );
   return (
     <Layout>
       <SEO title={data.site.siteMetadata.title} />
-      {renderPost(posts)}
+      <PostList postData={postData} />
     </Layout>
   );
-};
+}
 
-export const posts = graphql`
-  query queryPostsAll {
+export const pageQuery = graphql`
+  query {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
@@ -43,5 +43,3 @@ export const posts = graphql`
     }
   }
 `;
-
-export default IndexPage;

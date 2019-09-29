@@ -2,6 +2,7 @@
   text-decoration: none;
 }
 .post-link-title-txt {
+  display: inline-block;
   color: #000;
 }
 .post-link-date-txt,

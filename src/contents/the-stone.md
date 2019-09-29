@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2017-05-01
 title: 'The Stone'
-path: /the-stone
+path: /post/the-stone
 tags: League of Legends, 坂本真綾
 category: gaming
 ---

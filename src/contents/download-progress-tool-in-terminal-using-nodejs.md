@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2019-06-07
 title: 'Download progress tool in terminal using Node.JS'
-path: /download-progress-tool-in-terminal-using-nodejs
+path: /post/download-progress-tool-in-terminal-using-nodejs
 tags: JavaScript, Node.JS
 category: programming
 ---

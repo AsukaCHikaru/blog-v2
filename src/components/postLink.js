@@ -25,9 +25,11 @@ const renderTags = tags => {
 const PostLink = ({ post }) => {
   return (
     <div className="post-link-container">
-      <Link to={post.path}>
-        <h3 className="post-link-title-txt">{post.title}</h3>
-      </Link>
+      <div className="post-link-title-wrapper">
+        <Link to={post.path}>
+          <h3 className="post-link-title-txt">{post.title}</h3>
+        </Link>
+      </div>
       <h4 className="post-link-date-txt">{post.date}</h4>
       {renderTags(post.tags)}
     </div>

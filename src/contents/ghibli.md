@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2017-01-10
 title: 'ジブリ'
-path: /ghibli
+path: /post/ghibli
 tags: Review, ジブリ, Movie
 category: others
 ---

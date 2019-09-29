@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2016-12-27
 title: '耳を澄ませば'
-path: /whipser-of-the-heart
+path: /post/whipser-of-the-heart
 tags: Movie, ジブリ, 耳を澄ませば
 category: others
 ---

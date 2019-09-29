@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2017-09-17
 title: 'Day of Destiny'
-path: /day-of-destiny
+path: /post/day-of-destiny
 tags: HKT48, 森保まどか
 category: others
 ---

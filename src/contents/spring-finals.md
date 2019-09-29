@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2017-04-24
 title: 'Spring Finals'
-path: /spring-finals
+path: /post/spring-finals
 tags: League of Legends, TSM, LOL Esports
 category: gaming
 ---

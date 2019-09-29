@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2016-11-06
 title: 'Road to plat'
-path: /road-to-plat
+path: /post/road-to-plat
 tags: League of Legends
 category: gaming
 ---

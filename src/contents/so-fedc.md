@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2018-07-17
 title: '所以，FEDC'
-path: /so-fedc
+path: /post/so-fedc
 tags: Front-End
 category: programming
 ---

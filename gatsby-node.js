@@ -17,6 +17,7 @@ exports.createPages = async ({ actions, graphql }) => {
           node {
             frontmatter {
               path
+              tags
             }
           }
         }
@@ -26,6 +27,18 @@ exports.createPages = async ({ actions, graphql }) => {
   if (postContextQueryResult.errors) {
     console.error(postContextQueryResult.errors);
   }
+
+  const tags = postContextQueryResult.data.allMarkdownRemark.edges
+    .filter(node => node.node.frontmatter.tags !== null)
+    .map(node => {
+      return node.node.frontmatter.tags.split(', ');
+    })
+    .reduce((acc, curr) => {
+      curr.forEach(tag => {
+        if (!acc.includes(tag)) acc.push(tag);
+      });
+      return acc;
+    }, []);
 
   const categories = ['all', 'gaming', 'programming', 'others'];
 
@@ -39,9 +52,19 @@ exports.createPages = async ({ actions, graphql }) => {
   categories.forEach(category => {
     createPage({
       path: `/category/${category}`,
-      component: path.resolve(`src/templates/postList.js`),
+      component: path.resolve(`src/templates/postListView.js`),
       context: {
         category: category,
+      },
+    });
+  });
+
+  tags.forEach(tag => {
+    createPage({
+      path: `/tag/${tag.toLowerCase()}`,
+      component: path.resolve(`src/templates/postListView.js`),
+      context: {
+        tag: tag,
       },
     });
   });

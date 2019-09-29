@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2019-08-08
 title: 'Things I learned after building 5 React.js apps'
-path: /things-i-learned-after-building-5-react-apps
+path: /post/things-i-learned-after-building-5-react-apps
 tags: JavaScript, React.js
 category: programming
 ---

@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2019-09-09
 title: 'Deploying React.js app on GAE'
-path: /deploying-react-app-on-gae
+path: /post/deploying-react-app-on-gae
 tags: React.js, GAE
 category: programming
 ---

@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2017-01-17
 title: '卒業'
-path: /sotsugyou
+path: /post/sotsugyou
 tags:
 category: others
 ---

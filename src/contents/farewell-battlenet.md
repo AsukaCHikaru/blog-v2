@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2017-03-27
 title: 'Farewell, Battle.Net'
-path: /farewell-battlenet
+path: /post/farewell-battlenet
 tags: Blizzard, BattleNet, WarCraft3
 category: gaming
 ---

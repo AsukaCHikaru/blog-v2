@@ -1,7 +1,7 @@
 ---
 date: 2019-09-12
 title: City of Stars
-path: /city-of-stars
+path: /post/city-of-stars
 tags: Movie
 category: others
 ---

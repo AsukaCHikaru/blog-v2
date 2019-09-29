@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2019-05-23
 title: 'A rather easy way to implement quicksort in JavaScript'
-path: /a-rather-easy-way-to-implement-quicksort-in-js
+path: /post/a-rather-easy-way-to-implement-quicksort-in-js
 tags: JavaScript, algorithm
 category: programming
 ---

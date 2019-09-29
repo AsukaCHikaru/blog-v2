@@ -2,7 +2,7 @@
 author: asukachikaru
 date: 2018-05-28
 title: 'Dev Diary: Aura'
-path: /dev-diary-aura
+path: /post/dev-diary-aura
 tags: Game Design
 category: gaming
 ---
