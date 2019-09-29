@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+import Footer from './footer';
 import './layout.css';
 
 const mainLayoutStyle = {
@@ -27,17 +28,8 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <footer>
-          © 2019{' '}
-          <a
-            href="https://asukachikaru.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            asukachikaru.com
-          </a>
-        </footer>
       </div>
+      <Footer />
     </div>
   );
 };

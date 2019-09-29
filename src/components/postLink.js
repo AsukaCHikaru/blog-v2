@@ -15,7 +15,7 @@ const renderTags = tags => {
             .join('-')}`;
           return (
             <Link to={tagPath} key={`post-link-tag-${i}`}>
-              <h5 className="post-link-tag-txt">{tag}</h5>{' '}
+              <h5 className="post-link-tag-txt">{`#${tag}`}</h5>{' '}
             </Link>
           );
         });
