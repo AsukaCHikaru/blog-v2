@@ -22,7 +22,6 @@ const Layout = ({ children }) => {
       }
     }
   `);
-
   return (
     <div style={mainLayoutStyle}>
       <Header siteTitle={data.site.siteMetadata.title} />

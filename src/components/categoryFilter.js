@@ -2,11 +2,19 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const CategoryFilter = ({ category }) => {
+const CategoryFilter = ({ category, selected }) => {
   const goalPath = category === 'all' ? '/' : `/category/${category}`;
   return (
     <Link to={goalPath}>
-      <h3 className="category-filter-txt">{category.toUpperCase()}</h3>
+      <h3
+        className={
+          selected
+            ? 'category-filter-txt category-selected'
+            : 'category-filter-txt'
+        }
+      >
+        {category.toUpperCase()}
+      </h3>
     </Link>
   );
 };
