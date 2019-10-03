@@ -1,12 +1,67 @@
 .post-content-container {
   margin: 0 auto;
   font-size: 1.2em;
-  max-width: 960px;
+  max-width: 900px;
   padding: 0px 1.0875rem 1.45rem;
 }
 
 .post-title-txt {
-  font-family: 'Noto Serif JP';
+  margin-bottom: 0.2em;
+  font-family: 'Noto Serif JP', serif;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 2.8em;
+}
+.post-date-txt,
+.post-tag-txt {
+  margin: 0 0.4em;
+  color: #555;
+  font-size: 0.95em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.post-date-txt {
+  margin-left: 0;
+  font-weight: 700;
+}
+.post-tag-txt {
+  font-weight: 100;
+}
+.post-wrapper {
+  font-size: 1.05em;
+  line-height: 1.7em;
+}
+.post-wrapper blockquote {
+  color: #555;
+  font-style: italic;
+}
+.post-wrapper hr {
+  margin: 0 auto 1.45rem auto;
+  max-width: 30%;
+  background-color: #888;
+}
+.post-wrapper h1,
+.post-wrapper h2,
+.post-wrapper h3,
+.post-wrapper h4,
+.post-wrapper h5,
+.post-wrapper h6 {
+  font-family: 'Noto Serif JP', serif;
+}
+.post-wrapper a {
+  color: #0d69da;
+  text-decoration: none;
+}
+.post-wrapper a:hover {
+  text-decoration: underline;
+}
+.post-wrapper li {
+  margin: 0;
+}
+.post-wrapper code {
+  padding: 0.2em;
+  background-color: #ddd;
+  color: #333;
+  border-radius: 0.2em;
+}
+.post-wrapper pre {
+  background-color: #ddd;
 }

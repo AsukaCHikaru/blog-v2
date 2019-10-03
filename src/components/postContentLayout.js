@@ -9,9 +9,7 @@ const PostContentLayout = ({ children, postMetadata }) => {
   return (
     <div className="post-content-container">
       <PostContentHeader postMetadata={postMetadata} />
-      <div>
-        <main>{children}</main>
-      </div>
+      <main>{children}</main>
       <Footer />
     </div>
   );

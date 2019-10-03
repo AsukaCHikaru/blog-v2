@@ -15,12 +15,10 @@ export default function PostContentView({ data }) {
   return (
     <PostContentLayout postMetadata={postMetadata}>
       <SEO title={frontmatter.title} />
-      <div className="blog-post">
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
+      <div
+        className="post-wrapper"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </PostContentLayout>
   );
 }

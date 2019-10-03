@@ -5,7 +5,8 @@ import React from 'react';
 import './header.css';
 
 const renderTags = tags => {
-  return tags.map((tag, i) => {
+  const tagsArray = tags === null ? [] : tags.split(', ');
+  return tagsArray.map((tag, i) => {
     return (
       <Link to={`/tag/${tag.toLowerCase()}`} key={`post-tag-${i}`}>
         <h3 className="post-tag-txt">{`#${tag}`}</h3>
@@ -18,9 +19,7 @@ const Header = ({ postMetadata }) => (
   <header>
     <h1 className="post-title-txt">{postMetadata.title}</h1>
     <h3 className="post-date-txt">{postMetadata.date}</h3>
-    <div className="post-tags-container">
-      {renderTags(postMetadata.tags.split(', '))}
-    </div>
+    <div className="post-tags-container">{renderTags(postMetadata.tags)}</div>
   </header>
 );
 

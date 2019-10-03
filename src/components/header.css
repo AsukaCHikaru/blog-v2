@@ -1,5 +1,6 @@
-header {
+.app-container header {
   margin: 2.5em 0 1em 0;
+  font-size: 1.05em;
 }
 header a {
   text-decoration: none;
@@ -43,4 +44,7 @@ header a {
 }
 .post-tags-container {
   display: inline-block;
+}
+.post-content-container header {
+  margin: 2.5em 0;
 }
