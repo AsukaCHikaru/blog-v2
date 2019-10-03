@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import PostContentLayout from '../components/postContentLayout';
 import SEO from '../components/seo';
+import { htmlConverter } from '../lib/htmlConverter';
 
 export default function PostContentView({ data }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
@@ -12,12 +13,13 @@ export default function PostContentView({ data }) {
     date: frontmatter.date,
     tags: frontmatter.tags,
   };
+  const convertedHTML = htmlConverter(html);
   return (
     <PostContentLayout postMetadata={postMetadata}>
       <SEO title={frontmatter.title} />
       <div
         className="post-wrapper"
-        dangerouslySetInnerHTML={{ __html: html }}
+        dangerouslySetInnerHTML={{ __html: convertedHTML }}
       />
     </PostContentLayout>
   );
