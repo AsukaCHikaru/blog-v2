@@ -6,6 +6,8 @@ import SEO from '../components/seo';
 import { htmlConverter } from '../lib/htmlConverter';
 
 export default function PostContentView({ data }) {
+  console.log(data);
+
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   const postMetadata = {
@@ -26,7 +28,7 @@ export default function PostContentView({ data }) {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query($path: String!, $slug: String) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
@@ -34,6 +36,15 @@ export const pageQuery = graphql`
         path
         title
         tags
+      }
+    }
+    allImageSharp(filter: { fluid: { originalName: { regex: $slug } } }) {
+      edges {
+        node {
+          fluid(quality: 90) {
+            originalImg
+          }
+        }
       }
     }
   }
