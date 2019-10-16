@@ -29,4 +29,4 @@ Biodaddy。兩個賽季，兩次冠軍。命中了一些極為關鍵的 CC，對
 
 TSM。
 
-(pic1)
+![](../images/spring-finals_1.jpg)

@@ -1,8 +1,9 @@
 .post-content-container {
   margin: 0 auto;
-  font-size: 1.2em;
-  max-width: 900px;
   padding: 0px 1.0875rem 1.45rem;
+  max-width: 900px;
+  font-size: 1.2em;
+  font-family: 'Noto Serif JP', serif;
 }
 
 .post-title-txt {

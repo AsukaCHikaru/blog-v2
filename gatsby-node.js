@@ -46,6 +46,9 @@ exports.createPages = async ({ actions, graphql }) => {
     createPage({
       path: node.frontmatter.path,
       component: path.resolve(`src/templates/postContentView.js`),
+      context: {
+        slug: `\/${node.frontmatter.path.replace('/post/', '')}\/`,
+      },
     });
   });
 

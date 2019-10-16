@@ -49,6 +49,6 @@ category: gaming
 
 該說我內心早就猜到了嗎？
 
-(pic1)
+![](../images/the-stone_1.png)
 
 我的下一隻 main 就是 Taliyah。
