@@ -6,8 +6,6 @@ import SEO from '../components/seo';
 import { htmlConverter } from '../lib/htmlConverter';
 
 export default function PostContentView({ data }) {
-  console.log(data);
-
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   const postMetadata = {
@@ -41,7 +39,7 @@ export const pageQuery = graphql`
     allImageSharp(filter: { fluid: { originalName: { regex: $slug } } }) {
       edges {
         node {
-          fluid(quality: 90) {
+          fluid(quality: 100) {
             originalImg
           }
         }
