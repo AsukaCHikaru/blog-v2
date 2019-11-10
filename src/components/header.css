@@ -18,13 +18,16 @@ header a {
   border-left: solid 1px #000;
   padding: 0 0.5em;
   font-size: 1.2em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, 'Noto Sans JP', monospace;
   font-weight: 100;
   color: #666;
 }
 .category-filter-txt.category-selected {
   color: #000;
   text-decoration: underline;
+}
+.category-filter-txt.category-hided {
+  display: none;
 }
 .header-category-filter-container a:first-child h3 {
   border-left: none;

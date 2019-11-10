@@ -2,18 +2,22 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const CategoryFilter = ({ category, selected }) => {
+const CategoryFilter = ({ category, selected, children }) => {
   const goalPath = category === 'all' ? '/' : `/category/${category}`;
   return (
     <Link to={goalPath}>
       <h3
         className={
-          selected
+          category === 'tag' && !selected
+            ? 'category-filter-txt category-hided'
+            : selected
             ? 'category-filter-txt category-selected'
             : 'category-filter-txt'
         }
       >
-        {category.toUpperCase()}
+        {category === 'tag'
+          ? `#${children.toUpperCase().replace(/-/g, ' ')}`
+          : children.toUpperCase()}
       </h3>
     </Link>
   );
@@ -21,10 +25,12 @@ const CategoryFilter = ({ category, selected }) => {
 
 CategoryFilter.propTypes = {
   category: PropTypes.string,
+  selected: PropTypes.bool,
 };
 
 CategoryFilter.defaultProps = {
   category: '',
+  selected: false,
 };
 
 export default CategoryFilter;
