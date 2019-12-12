@@ -620,3 +620,31 @@ pre code {
     font-size: 100%;
   }
 }
+
+@media all and (max-width: 1260px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+  .app-container {
+    max-width: 750px;
+  }
+}
+@media all and (max-width: 768px) {
+  body,
+  html {
+    font-size: 11px;
+  }
+  .app-container {
+    max-width: 400px;
+  }
+}
+@media all and (max-width: 420px) {
+  body,
+  html {
+    font-size: 9px;
+  }
+  .app-container {
+    max-width: 360px;
+  }
+}

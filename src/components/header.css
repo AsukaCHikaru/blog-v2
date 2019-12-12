@@ -51,3 +51,10 @@ header a {
 .post-content-container header {
   margin: 2.5em 0;
 }
+
+@media all and (max-width: 768px) {
+  body,
+  html {
+    font-size: 12px;
+  }
+}
