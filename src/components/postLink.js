@@ -8,17 +8,17 @@ const renderTags = tags => {
   const tagNodes =
     tags === null
       ? null
-      : tags.split(/,\s*/).map((tag, i) => {
-          const tagPath = `/tag/${tag
-            .toLowerCase()
-            .split(' ')
-            .join('-')}`;
-          return (
-            <Link to={tagPath} key={`post-link-tag-${i}`}>
-              <h5 className="post-link-tag-txt">{`#${tag}`}</h5>{' '}
-            </Link>
-          );
-        });
+      : tags.split(/,\s*/)
+          .map((tag, i) => {
+            const tagPath = `/tag/${tag
+              .toLowerCase()
+              .replace(/\s/g, '-')}`;
+            return (
+              <Link to={tagPath} key={`post-link-tag-${i}`}>
+                <h5 className="post-link-tag-txt">{`#${tag}`}</h5>{' '}
+              </Link>
+            );
+          });
   return <div className="post-link-tag-container">{tagNodes}</div>;
 };
 

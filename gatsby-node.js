@@ -63,11 +63,9 @@ exports.createPages = async ({ actions, graphql }) => {
   });
 
   tags.forEach(tag => {
+    const tagPath = `/tag/${tag.toLowerCase().replace(/\s/g, '-')}`
     createPage({
-      path: `/tag/${tag
-        .toLowerCase()
-        .split(' ')
-        .join('-')}`,
+      path: tagPath,
       component: path.resolve(`src/templates/postListView.js`),
       context: {
         tag: tag,
