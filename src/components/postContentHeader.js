@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import './header.css';
+import '../styles/header.css';
 
 const renderTags = tags => {
   const tagsArray = tags === null ? [] : tags.split(', ');

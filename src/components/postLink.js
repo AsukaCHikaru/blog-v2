@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import './postLink.css';
+import '../styles/postLink.css';
 
 const renderTags = tags => {
   const tagNodes =

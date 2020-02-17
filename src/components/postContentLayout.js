@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import PostContentHeader from './postContentHeader';
 import Footer from './footer';
-import './postContent.css';
+import '../styles/postContent.css';
 
 const PostContentLayout = ({ children, postMetadata }) => {
   return (

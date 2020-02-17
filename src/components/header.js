@@ -4,7 +4,7 @@ import React from 'react';
 import { Location } from '@reach/router';
 
 import CategoryFilter from './categoryFilter';
-import './header.css';
+import '../styles/header.css';
 
 const Header = ({ siteTitle }) => (
   <Location>
