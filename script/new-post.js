@@ -1,11 +1,17 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+const AUTHOR = "asukachikaru";
 const CONTENT_PATH = `src/contents/`
 const argv = process.argv.slice(2).join(" ");
-const date = new Date().toLocaleDateString("ja-JP").replace(/\//g, "-");
+const date = new Date().toLocaleDateString("ja-JP", {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit"
+}).replace(/\//g, "-");
 
 const postMetaData = {
+  author: AUTHOR,
   date: date,
   title: argv,
   path: argv.toLowerCase().replace(/\s/g, "-"),
@@ -14,6 +20,8 @@ const postMetaData = {
 };
 
 const run = async () => {
+  console.log(date);
+  
   await inquirer
     .prompt([
       {
@@ -47,9 +55,10 @@ const run = async () => {
   fs.writeFileSync(
     `${CONTENT_PATH}${postMetaData.path}.md`,
     `---
+author: ${postMetaData.author}
 date: ${postMetaData.date}
-title: ${postMetaData.title}
-path: ${postMetaData.path}
+title: '${postMetaData.title}'
+path: /post/${postMetaData.path}
 tags: ${postMetaData.tags.join(", ")}
 category: ${postMetaData.catgory}
 ---
