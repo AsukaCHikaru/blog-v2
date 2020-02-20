@@ -8,7 +8,10 @@ const renderTags = tags => {
   const tagsArray = tags === null ? [] : tags.split(', ');
   return tagsArray.map((tag, i) => {
     return (
-      <Link to={`/tag/${tag.toLowerCase()}`} key={`post-tag-${i}`}>
+      <Link 
+        to={`/tag/${tag.toLowerCase().replace(/\s/g, '-')}`} 
+        key={`post-tag-${i}`}
+      >
         <h3 className="post-tag-txt">{`#${tag}`}</h3>
       </Link>
     );
