@@ -4,8 +4,9 @@ import '../styles/footer.css';
 
 const Footer = () => (
   <footer>
-    © 2019{' '}
+    © {new Date().getFullYear()}{' '}
     <a
+      className="footer--link"
       href="https://asukachikaru.com"
       target="_blank"
       rel="noopener noreferrer"

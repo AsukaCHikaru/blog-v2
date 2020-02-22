@@ -2,10 +2,30 @@ footer {
   margin-top: 4em;
   font-family: 'Courier New', Courier, monospace;
 }
-footer a {
+.footer--link_title{
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
   color: #000;
   text-decoration: none;
 }
-footer a:hover {
+.footer--link_container:last-of-type{
+  margin: 1em 0 0 0;
+}
+.footer--link{
+  margin: 0;
+  padding: 0 0.5em;
+  border: solid 1px #000;
+  border-width: 0 0 0 1px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1em;
+}
+.footer--link:first-of-type{
+  padding-left: 0;
+  margin-left: 0;
+  border-left: none;
+}
+.footer--link:hover{
   text-decoration: underline;
 }
