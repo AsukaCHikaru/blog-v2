@@ -8,6 +8,7 @@ before_deploy:
 deploy:
   provider: pages
   local_dir: public
+  fqdn: blog.asukachikaru.com
   skip-cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
