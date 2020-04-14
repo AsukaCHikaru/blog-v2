@@ -629,6 +629,11 @@ pre code {
   .app-container {
     max-width: 750px;
   }
+  .post-wrapper .youtube {
+    margin: auto auto 1.45rem auto;
+    width: calc(750px * 0.9);
+    height: calc(750px * 0.9 * 0.9 / 1.6);
+  }
 }
 @media all and (max-width: 768px) {
   body,
@@ -638,6 +643,11 @@ pre code {
   .app-container {
     max-width: 400px;
   }
+  .post-wrapper .youtube {
+    margin: auto auto 1.45rem auto;
+    width: calc(400px * 0.9);
+    height: calc(400px * 0.9 * 0.9 / 1.6);
+  }
 }
 @media all and (max-width: 420px) {
   body,
@@ -646,5 +656,10 @@ pre code {
   }
   .app-container {
     max-width: 360px;
+  }
+  .post-wrapper .youtube {
+    margin: auto auto 1.45rem auto;
+    width: calc(360px * 0.9);
+    height: calc(360px * 0.9 * 0.9 / 1.6);
   }
 }

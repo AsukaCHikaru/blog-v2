@@ -1,7 +1,7 @@
 export const htmlConverter = html => {
   let convertedHTML;
-  convertedHTML = convertLink(html);
-  convertedHTML = convertYoutube(convertedHTML);
+  convertedHTML = convertYoutube(html);
+  convertedHTML = convertLink(convertedHTML);
 
   return convertedHTML;
 };
