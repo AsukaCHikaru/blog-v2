@@ -17,7 +17,7 @@ body {
 .app-container {
   margin: 0 auto;
   max-width: 900px;
-  padding: 0px 1.0875rem 1.45rem;
+  padding: 0px 2rem 1.45rem;
   padding-top: 0;
 }
 
@@ -627,7 +627,7 @@ pre code {
     font-size: 14px;
   }
   .app-container {
-    max-width: 750px;
+    max-width: 768px;
   }
   .post-wrapper .youtube {
     margin: auto auto 1.45rem auto;
@@ -638,28 +638,32 @@ pre code {
 @media all and (max-width: 768px) {
   body,
   html {
-    font-size: 11px;
+    font-size: 13px;
   }
-  .app-container {
-    max-width: 400px;
+  .app-container, .post-content-container {
+    max-width: calc(768px - 4rem);
+  }
+  .post-wrapper{
+    font-size: 1.2em;
   }
   .post-wrapper .youtube {
     margin: auto auto 1.45rem auto;
-    width: calc(400px * 0.9);
-    height: calc(400px * 0.9 * 0.9 / 1.6);
+    width: calc(calc(100vw - 4rem) * 0.9);
+    height: calc(calc(100vw - 4rem) * 0.9 * 0.9 / 1.6);
   }
 }
 @media all and (max-width: 420px) {
   body,
   html {
-    font-size: 9px;
+    font-size: 11.5px;
+  }  
+  .header-title-txt{
+    font-size: 2.5em;
   }
-  .app-container {
-    max-width: 360px;
+  .post-date-txt, .post-tag-txt{
+    font-size: 1.2em;
   }
-  .post-wrapper .youtube {
-    margin: auto auto 1.45rem auto;
-    width: calc(360px * 0.9);
-    height: calc(360px * 0.9 * 0.9 / 1.6);
+  .post-wrapper{
+    font-size: 1.3em;
   }
 }
