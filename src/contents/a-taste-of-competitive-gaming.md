@@ -10,7 +10,8 @@ category: gaming
 I've never reached the level of skill required to be in competitive gaming in the past, nor do I expect myself to achieve it in the future. Of course, as such a fan of traditional sports and esports, I sometimes dream of teammates I can rely on to play with, to fully enjoy fighting, communicating, and competing with companions.
 
 However, as I live in a foreign country for years, the difficulty of getting a team or even friends to play with is greater. Let alone who would want to create a team for a silver/ gold guy? Like for players lower than diamond/ master, you don't even qualify to compete.
-And clash is precisely the answer to that.
+
+And clash is exactly the answer to that.
 
 With clash you can easily enjoy a tournament with a clear format and schedule, and everyone can join. The low threshold makes teams willing to embrace temporary teammates, to match the minimum requirement of entering clash, which is to find five players.
 
